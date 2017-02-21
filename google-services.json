@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "754844479369",
+    "firebase_url": "https://wtalk-f6080.firebaseio.com",
+    "project_id": "wtalk-f6080",
+    "storage_bucket": "wtalk-f6080.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754844479369:android:3c5a269137bdc5e9",
+        "android_client_info": {
+          "package_name": "org.wtalk.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754844479369-9f62h30uclbcogv7itugj89nh1q64hpj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.wtalk.messenger",
+            "certificate_hash": "A4C15B03D8228313F0653B3CA08F56F43FB11D5E"
+          }
+        },
+        {
+          "client_id": "754844479369-mf4c7bde5phbscsuhqgmpd73gqm12di9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzx4P2JIyhsVy3KQiU6RX2v7LxQx-gAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754844479369-mf4c7bde5phbscsuhqgmpd73gqm12di9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754844479369:android:350c167ddcd38f7c",
+        "android_client_info": {
+          "package_name": "kr.wdream.storyshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754844479369-71557slq0cv7i5iti3hutj98na8btqg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.wdream.storyshop",
+            "certificate_hash": "A4C15B03D8228313F0653B3CA08F56F43FB11D5E"
+          }
+        },
+        {
+          "client_id": "754844479369-mf4c7bde5phbscsuhqgmpd73gqm12di9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzx4P2JIyhsVy3KQiU6RX2v7LxQx-gAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754844479369-mf4c7bde5phbscsuhqgmpd73gqm12di9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

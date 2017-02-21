@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtTitle"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:background="@color/lightgray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/txtDisMessage"
+        android:layout_below="@+id/txtTitle"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:clickable="false"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/lytEditText"
+        android:layout_below="@+id/txtTitle"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edtId"
+            android:hint="@string/Username"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edtPw"
+            android:layout_weight="1"
+            android:hint="@string/YourPassword"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtDisMessage">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:layout_weight="1"
+            android:text="@string/Cancel"
+            android:textColor="@color/orange"
+            android:background="@color/lightgray"/>
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"></RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_weight="1"
+            android:text="@string/OK"
+            android:textColor="@color/orange"
+            android:background="@color/lightgray"/>
+    </LinearLayout>
+
+</RelativeLayout>

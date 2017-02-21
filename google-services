@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "990675805580",
+    "firebase_url": "https://fir-chat-5a8e5.firebaseio.com",
+    "project_id": "fir-chat-5a8e5",
+    "storage_bucket": "fir-chat-5a8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990675805580:android:bc9f55612f490ae8",
+        "android_client_info": {
+          "package_name": "kr.wdream.firebasechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990675805580-ub10g1eeqa88452id0ea137m32egnlpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ6oVyvdOmBK4qCnNHQ6wlCl9kc6De0MI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990675805580:android:f6afd7b67eae3860",
+        "android_client_info": {
+          "package_name": "org.toptalk.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990675805580-ub10g1eeqa88452id0ea137m32egnlpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ6oVyvdOmBK4qCnNHQ6wlCl9kc6De0MI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990675805580:android:dc022572c167a16c",
+        "android_client_info": {
+          "package_name": "org.toptalk.messenger.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990675805580-ub10g1eeqa88452id0ea137m32egnlpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ6oVyvdOmBK4qCnNHQ6wlCl9kc6De0MI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

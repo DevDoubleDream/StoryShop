@@ -1,0 +1,4 @@
+#Mon Feb 20 14:31:25 KST 2017
+base.0=/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/transforms/dex/armv7/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/transforms/dex/armv7/debug/folders/1000/1f/main/classes.dex

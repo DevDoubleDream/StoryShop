@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">754844479369-mf4c7bde5phbscsuhqgmpd73gqm12di9.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://wtalk-f6080.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">754844479369</string>
+    <string name="google_api_key" translatable="false">AIzaSyDUzx4P2JIyhsVy3KQiU6RX2v7LxQx-gAw</string>
+    <string name="google_app_id" translatable="false">1:754844479369:android:350c167ddcd38f7c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDUzx4P2JIyhsVy3KQiU6RX2v7LxQx-gAw</string>
+    <string name="google_storage_bucket" translatable="false">wtalk-f6080.appspot.com</string>
+</resources>
