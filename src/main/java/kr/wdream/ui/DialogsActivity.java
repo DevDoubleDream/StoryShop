@@ -31,6 +31,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.StrictMode;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -50,6 +52,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import kr.wdream.Wdream.Adapter.ContentsAdapter;
 import kr.wdream.Wdream.Adapter.SettingAdapter;
@@ -63,6 +66,7 @@ import kr.wdream.storyshop.DialogObject;
 import kr.wdream.storyshop.ImageLoader;
 import kr.wdream.storyshop.LocaleController;
 import kr.wdream.storyshop.MessageObject;
+import kr.wdream.storyshop.R;
 import kr.wdream.storyshop.UserObject;
 import kr.wdream.storyshop.query.SearchQuery;
 import kr.wdream.storyshop.query.StickersQuery;
@@ -154,18 +158,23 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
 
     private LinearLayout contentLayout;
 
-    private GridView gridContent;
-    private ContentsAdapter contentsAdapter;
-    private int finalGridViewHeight;
 
     private SearchAdapter searchAdapter;
     private boolean tab1Searching;
 
-    private RelativeLayout settingLayout;
+    private LinearLayout settingLayout;
     private LinearLayout.LayoutParams tabParams;
 
     public boolean connect;
     public SharedPreferences sp;
+
+    //SettingLayout Button 선언
+    private LinearLayout btnMyInfo;
+    private LinearLayout btnConnectShop;
+    private LinearLayout btnNotificationCenter;
+    private LinearLayout btnCSCenter;
+    private LinearLayout btnVersion;
+    private LinearLayout btnDisConnect;
 
     public interface DialogsActivityDelegate {
         void didSelectDialog(DialogsActivity fragment, long dialog_id, boolean param);
@@ -902,59 +911,25 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         settingContent.add(6, "내 정보변경");
 
         // Contents Layout 생성
+        GridView gridContents = new GridView(context);
+        gridContents.setNumColumns(GridView.AUTO_FIT);
+        gridContents.setGravity(Gravity.CENTER);
 
+        ContentsAdapter contentsAdapter = new ContentsAdapter(context);
+        gridContents.setAdapter(contentsAdapter);
+
+        contentLayout.addView(gridContents, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         // Setting Layout 생성하기
-
-        settingLayout = new RelativeLayout(context);
+        settingLayout = new LinearLayout(context);
+        settingLayout.setOrientation(LinearLayout.VERTICAL);
         settingLayout.setVisibility(View.GONE);
-        GridView gridSetting = new GridView(context);
-        gridSetting.setNumColumns(GridView.AUTO_FIT);
-        gridSetting.setGravity(Gravity.CENTER);
 
-        SettingAdapter settingAdapter = new SettingAdapter(context, kr.wdream.storyshop.R.layout.item_setting);
-        settingAdapter.notifyDataSetChanged();
-        gridSetting.setAdapter(settingAdapter);
+        settingLayout.setBackgroundColor(Color.parseColor("#EEEEEE"));
 
-        settingLayout.addView(gridSetting, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+        createSettingLayout();
 
-        gridSetting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch(position){
-                    case 0:
-                        presentFragment(new ChangeNameActivity());
-//                        presentFragment(new SettingsActivity());
-                        break;
-
-                    case 1:
-                        sp = context.getSharedPreferences("connectMall", Context.MODE_PRIVATE);
-                        connect = sp.getBoolean("connecting", false);
-
-                        ShoppingDialog dialog = new ShoppingDialog(context, connect);
-                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                        dialog.show();
-                        break;
-
-                    case 2:
-                        presentFragment(new NotificationActivity());
-                        break;
-
-                    case 3:
-                        presentFragment(new CenterActivity());
-                        break;
-
-                    case 4:
-                        presentFragment(new AppVersionActivity());
-                        break;
-
-                    case 5:
-                        Log.d(LOG_TAG, "탑톡 탈퇴 : " + position);
-                        break;
-                }
-            }
-        });
-
+        // TabBar 관련
         lytTab.addView(tab1, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, 1));
         lytTab.addView(tab2, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, 1));
         lytTab.addView(tab3, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, 1));
@@ -1652,7 +1627,31 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_n));
             tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_s));
             //                    presentFragment(new SettingsActivity());
+        }
 
+        if (v == btnMyInfo){
+            presentFragment(new ChangeNameActivity());
+        }
+
+        if (v == btnConnectShop) {
+            ShoppingDialog shoppingDialog = new ShoppingDialog(context);
+            shoppingDialog.show();
+        }
+
+        if (v == btnNotificationCenter){
+            presentFragment(new NotificationsSettingsActivity());
+        }
+
+        if (v == btnCSCenter) {
+            presentFragment(new CenterActivity());
+        }
+
+        if (v == btnVersion) {
+            presentFragment(new AppVersionActivity());
+        }
+
+        if (v == btnDisConnect) {
+            Toast.makeText(context, "준비중입니다.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -1665,4 +1664,119 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             }
         }
     };
+
+    private void createSettingLayout(){
+        // 첫번째 덩어리 생성
+        LinearLayout lytMySetting = new LinearLayout(context);
+        lytMySetting.setOrientation(LinearLayout.VERTICAL);
+        lytMySetting.setBackgroundColor(Color.WHITE);
+
+        // 내 정보 변경 버튼 생성
+        btnMyInfo = new LinearLayout(context);
+        btnMyInfo.setOrientation(LinearLayout.HORIZONTAL);
+        btnMyInfo.setOnClickListener(this);
+
+        ImageView imgMyInfo = new ImageView(context);
+        imgMyInfo.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtMyInfo = new TextView(context);
+        txtMyInfo.setText("내 정보 변경");
+
+        btnMyInfo.addView(imgMyInfo, LayoutHelper.createLinear(20,20));
+        btnMyInfo.addView(txtMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        // 쇼핑몰 연동 설정 버튼 생성
+        btnConnectShop = new LinearLayout(context);
+        btnConnectShop.setOrientation(LinearLayout.HORIZONTAL);
+        btnConnectShop.setOnClickListener(this);
+
+        ImageView imgConnectShop = new ImageView(context);
+        imgConnectShop.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtConnectShop = new TextView(context);
+        txtConnectShop.setText("쇼핑몰 연동 설정");
+
+        btnConnectShop.addView(imgConnectShop, LayoutHelper.createLinear(20,20));
+        btnConnectShop.addView(txtConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        // 알림 및 소리 버튼 생성
+        btnNotificationCenter = new LinearLayout(context);
+        btnNotificationCenter.setOrientation(LinearLayout.HORIZONTAL);
+        btnNotificationCenter.setOnClickListener(this);
+
+        ImageView imgNotificationCenter = new ImageView(context);
+        imgNotificationCenter.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtNotificationCenter = new TextView(context);
+        txtNotificationCenter.setText("알림 및 설정");
+
+        btnNotificationCenter.addView(imgNotificationCenter, LayoutHelper.createLinear(20,20));
+        btnNotificationCenter.addView(txtNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        //첫번째 덩어리에 버튼 3개 붙이기
+        lytMySetting.addView(btnMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytMySetting.addView(btnConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytMySetting.addView(btnNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+
+        // 두번째 덩어리 생성
+        LinearLayout lytSettingCenter = new LinearLayout(context);
+        lytSettingCenter.setOrientation(LinearLayout.VERTICAL);
+        lytSettingCenter.setBackgroundColor(Color.WHITE);
+
+        // 고객센터 버튼 생성
+        btnCSCenter = new LinearLayout(context);
+        btnCSCenter.setOrientation(LinearLayout.HORIZONTAL);
+        btnCSCenter.setOnClickListener(this);
+
+        ImageView imgCSCenter = new ImageView(context);
+        imgCSCenter.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtCSCenter = new TextView(context);
+        txtCSCenter.setText("고객센터");
+
+        btnCSCenter.addView(imgCSCenter, LayoutHelper.createLinear(20,20));
+        btnCSCenter.addView(txtCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        // 버전 정보 버튼 생성
+        btnVersion = new LinearLayout(context);
+        btnVersion.setOrientation(LinearLayout.HORIZONTAL);
+        btnVersion.setOnClickListener(this);
+
+        ImageView imgVersion = new ImageView(context);
+        imgVersion.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtVersion = new TextView(context);
+        txtVersion.setText("버전정보");
+
+        TextView txtExposeVersion = new TextView(context);
+        txtExposeVersion.setText("1.0.0");
+
+        btnVersion.addView(imgVersion, LayoutHelper.createLinear(20,20));
+        btnVersion.addView(txtVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+        Log.d("상은","버전정보 : " + BuildVars.BUILD_VERSION_STRING);
+//        btnVersion.addView(txtExposeVersion, LayoutHelper.createLinear(LayoutHelper.))
+
+        // 탈퇴 버튼 생성
+        btnDisConnect = new LinearLayout(context);
+        btnDisConnect.setOrientation(LinearLayout.HORIZONTAL);
+        btnDisConnect.setOnClickListener(this);
+
+        ImageView imgDisConnect = new ImageView(context);
+        imgDisConnect.setImageResource(R.drawable.m_i_main_content_s);
+
+        TextView txtDisConnect = new TextView(context);
+        txtDisConnect.setText("알림 및 설정");
+
+        btnDisConnect.addView(imgDisConnect, LayoutHelper.createLinear(20,20));
+        btnDisConnect.addView(txtDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        //첫번째 덩어리에 버튼 3개 붙이기
+        lytSettingCenter.addView(btnCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytSettingCenter.addView(btnVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytSettingCenter.addView(btnDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+
+        //settingLayout에 생성한 덩어리들 붙이기
+        settingLayout.addView(lytMySetting, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 120, 0, 0 ,0, 10));
+        settingLayout.addView(lytSettingCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 120));
+    }
 }

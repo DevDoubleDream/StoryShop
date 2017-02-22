@@ -49,18 +49,18 @@ public class SettingAdapter extends BaseAdapter {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             resources = new Drawable[]{ context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_account, null),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_shop, null),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_noti, null),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_center, null),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_version, null),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_dis, null)};
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_shop, null),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_noti, null),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_center, null),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_version, null),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_dis, null)};
         }else{
             resources = new Drawable[]{ context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_account),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_shop),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_noti),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_center),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_version),
-                                        context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_dis),};
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_shop),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_noti),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_center),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_version),
+                    context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_dis),};
         }
 
     }
@@ -96,7 +96,7 @@ public class SettingAdapter extends BaseAdapter {
         holder.txtDescription.setText(descArray[position]);
         holder.imgIcon.setImageDrawable(resources[position]);
 
-    return convertView;
+        return convertView;
 
     }
 
