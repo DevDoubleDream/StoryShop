@@ -8,12 +8,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/layout/item_noti.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/layout/activity_test.xml",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/layout/activity_test.xml"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/layout/popup_text_layout.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/layout/popup_text_layout.xml"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/layout/activity_test.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/layout/activity_test.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/layout/hockeyapp_view_feedback_message.xml",

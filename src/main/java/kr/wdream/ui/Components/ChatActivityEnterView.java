@@ -1462,7 +1462,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         protected void onPreExecute() {
             super.onPreExecute();
             dlg = new ProgressDialog(context);
-            dlg.setTitle("탑톡");
+            dlg.setTitle("StoryShop");
             dlg.setMessage("번역중입니다.");
             dlg.show();
         }
@@ -1546,7 +1546,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                 btnOrigin.setImageResource(resId);
                 strOrigin = bundle.getString("nation");
 
-                Log.d("상은", "bundle : " + bundle.getString("nation"));
+                Log.d("상은", "bundle : " + resId + ", " + "falg : " + flag);
             }
 
             if (msg.what == 2000) {

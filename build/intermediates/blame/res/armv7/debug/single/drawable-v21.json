@@ -12,16 +12,16 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-v21/regbtn_states.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/floating_states.xml",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-v21/floating_states.xml"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/floating_user_states.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-v21/floating_user_states.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_lock.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_lock.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/floating_user_states.xml",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-v21/floating_user_states.xml"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/floating_states.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-v21/floating_states.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_style.xml",
@@ -44,12 +44,12 @@
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/list_selector_white.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_lock.xml",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_lock.xml"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/regbtn_states.xml",
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/regbtn_states.xml"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_lock.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_lock.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_white.xml",
@@ -60,12 +60,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_white.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_white.xml",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_white.xml"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/list_selector_white.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/list_selector_white.xml"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/bar_selector_white.xml",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-v21/bar_selector_white.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-v21/floating_states.xml",

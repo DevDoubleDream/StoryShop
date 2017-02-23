@@ -31,6 +31,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.StrictMode;
+import android.support.annotation.Px;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -59,6 +60,7 @@ import kr.wdream.Wdream.Adapter.SettingAdapter;
 import kr.wdream.Wdream.Cell.ContentsCell;
 import kr.wdream.Wdream.ShoppingDialog;
 import kr.wdream.Wdream.Util.ContentsUtil;
+import kr.wdream.Wdream.common.PxToDp;
 import kr.wdream.storyshop.AndroidUtilities;
 import kr.wdream.storyshop.BuildVars;
 import kr.wdream.storyshop.ChatObject;
@@ -144,7 +146,12 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
 
 
 
-    private ImageButton tab1, tab2, tab3, tab4;
+    // Tab Button 선언
+    private LinearLayout tab1, tab2, tab3, tab4;
+
+    // Tab Button 이미지 선언
+    private ImageView imgTab1, imgTab2, imgTab3, imgTab4;
+
     private LetterSectionsListView listContacts;
 //    private BaseSectionsAdapter contactsAdapter;
     private Context context;
@@ -502,17 +509,32 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         tabParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT, 1);
         tabParams.setMargins(0,0,0,5);
 
-        tab1 = new ImageButton(context);
-        tab1.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_flist_n));
+        tab1 = new LinearLayout(context);
+        tab1.setGravity(Gravity.CENTER);
+        imgTab1 = new ImageView(context);
+        imgTab1.setImageResource(R.drawable.m_i_main_flist_n);
+        tab1.addView(imgTab1, LayoutHelper.createLinear(21,20));
         tab1.setOnClickListener(this);
-        tab2 = new ImageButton(context);
-        tab2.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_clist_n));
+
+        tab2 = new LinearLayout(context);
+        tab2.setGravity(Gravity.CENTER);
+        imgTab2 = new ImageView(context);
+        imgTab2.setImageResource(R.drawable.m_i_main_clist_n);
+        tab2.addView(imgTab2, LayoutHelper.createLinear(21,20));
         tab2.setOnClickListener(this);
-        tab3 = new ImageButton(context);
-        tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_n));
+
+        tab3 = new LinearLayout(context);
+        tab3.setGravity(Gravity.CENTER);
+        imgTab3 = new ImageView(context);
+        imgTab3.setImageResource(R.drawable.m_i_main_content_n);
+        tab3.addView(imgTab3, LayoutHelper.createLinear(21,20));
         tab3.setOnClickListener(this);
-        tab4 = new ImageButton(context);
-        tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_n));
+
+        tab4 = new LinearLayout(context);
+        tab4.setGravity(Gravity.CENTER);
+        imgTab4 = new ImageView(context);
+        imgTab4.setImageResource(R.drawable.m_i_main_setting_n);
+        tab4.addView(imgTab4, LayoutHelper.createLinear(21,20));
         tab4.setOnClickListener(this);
 
 
@@ -935,7 +957,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         lytTab.addView(tab3, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, 1));
         lytTab.addView(tab4, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, 1));
 
-        relativeLayout.addView(lytTab, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, 52));
+        relativeLayout.addView(lytTab, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, 50));
 
         RelativeLayout.LayoutParams listParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
@@ -1504,7 +1526,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             tab3.setLayoutParams(params);
             tab4.setLayoutParams(params);
 
-            tab1.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            tab1.setBackgroundColor(Color.parseColor("#F5F5F5"));
             tab2.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab3.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab4.setBackgroundColor(Color.parseColor("#EEEEEE"));
@@ -1521,14 +1543,10 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             clicktab3 = false;
             clicktab4 = false;
 
-            tab1.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_flist_s));
-            tab1.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            tab2.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_clist_n));
-            tab2.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_n));
-            tab3.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_n));
-            tab4.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+            imgTab1.setImageResource(R.drawable.m_i_main_flist_s);
+            imgTab2.setImageResource(R.drawable.m_i_main_clist_n);
+            imgTab3.setImageResource(R.drawable.m_i_main_content_n);
+            imgTab4.setImageResource(R.drawable.m_i_main_setting_n);
 
         }
 
@@ -1541,7 +1559,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             tab4.setLayoutParams(params);
 
             tab1.setBackgroundColor(Color.parseColor("#EEEEEE"));
-            tab2.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            tab2.setBackgroundColor(Color.parseColor("#F5F5F5"));
             tab3.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab4.setBackgroundColor(Color.parseColor("#EEEEEE"));
             floatingButton.setVisibility(View.VISIBLE);
@@ -1559,10 +1577,10 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             clicktab3 = false;
             clicktab4 = false;
 
-            tab1.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_flist_n));
-            tab2.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_clist_s));
-            tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_n));
-            tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_n));
+            imgTab1.setImageResource(R.drawable.m_i_main_flist_n);
+            imgTab2.setImageResource(R.drawable.m_i_main_clist_s);
+            imgTab3.setImageResource(R.drawable.m_i_main_content_n);
+            imgTab4.setImageResource(R.drawable.m_i_main_setting_n);
         }
 
         if (v == tab3) {
@@ -1575,7 +1593,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
 
             tab1.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab2.setBackgroundColor(Color.parseColor("#EEEEEE"));
-            tab3.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            tab3.setBackgroundColor(Color.parseColor("#F5F5F5"));
             tab4.setBackgroundColor(Color.parseColor("#EEEEEE"));
             floatingButton.setVisibility(View.GONE);
             lytDialogs.setVisibility(View.GONE);
@@ -1590,10 +1608,10 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             clicktab2 = false;
             clicktab4 = false;
 
-            tab1.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_flist_n));
-            tab2.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_clist_n));
-            tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_s));
-            tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_n));
+            imgTab1.setImageResource(R.drawable.m_i_main_flist_n);
+            imgTab2.setImageResource(R.drawable.m_i_main_clist_n);
+            imgTab3.setImageResource(R.drawable.m_i_main_content_s);
+            imgTab4.setImageResource(R.drawable.m_i_main_setting_n);
         }
 
         if (v == tab4) {
@@ -1607,7 +1625,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             tab1.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab2.setBackgroundColor(Color.parseColor("#EEEEEE"));
             tab3.setBackgroundColor(Color.parseColor("#EEEEEE"));
-            tab4.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            tab4.setBackgroundColor(Color.parseColor("#F5F5F5"));
 
             floatingButton.setVisibility(View.GONE);
             lytDialogs.setVisibility(View.GONE);
@@ -1622,10 +1640,10 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             clicktab2 = false;
             clicktab4 = false;
 
-            tab1.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_flist_n));
-            tab2.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_clist_n));
-            tab3.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_content_n));
-            tab4.setImageDrawable(context.getResources().getDrawable(kr.wdream.storyshop.R.drawable.m_i_main_setting_s));
+            imgTab1.setImageResource(R.drawable.m_i_main_flist_n);
+            imgTab2.setImageResource(R.drawable.m_i_main_clist_n);
+            imgTab3.setImageResource(R.drawable.m_i_main_content_n);
+            imgTab4.setImageResource(R.drawable.m_i_main_setting_s);
             //                    presentFragment(new SettingsActivity());
         }
 
@@ -1666,117 +1684,189 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
     };
 
     private void createSettingLayout(){
+        PxToDp pxToDp = new PxToDp(context);
+
+        // 구분선을 위한 레이아웃
+        LinearLayout lytLine1 = new LinearLayout(context);
+        LinearLayout lytLine2 = new LinearLayout(context);
+        LinearLayout lytLine3 = new LinearLayout(context);
+        LinearLayout lytLine4 = new LinearLayout(context);
+        LinearLayout lytLine5 = new LinearLayout(context);
+        LinearLayout lytLine6 = new LinearLayout(context);
+        LinearLayout lytLine7 = new LinearLayout(context);
+
+        LinearLayout.LayoutParams paramLine = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, pxToDp.dpToPx(1));
+        paramLine.setMargins(pxToDp.dpToPx(56),0,0,0);
+
+        lytLine1.setLayoutParams(paramLine);
+        lytLine2.setLayoutParams(paramLine);
+        lytLine3.setLayoutParams(paramLine);
+        lytLine4.setLayoutParams(paramLine);
+
+        lytLine1.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine2.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine3.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine4.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine5.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine6.setBackgroundColor(Color.parseColor("#E5E5E5"));
+        lytLine7.setBackgroundColor(Color.parseColor("#E5E5E5"));
+
         // 첫번째 덩어리 생성
         LinearLayout lytMySetting = new LinearLayout(context);
         lytMySetting.setOrientation(LinearLayout.VERTICAL);
         lytMySetting.setBackgroundColor(Color.WHITE);
+        lytMySetting.setPadding(pxToDp.dpToPx(20),0,0,0);
+
 
         // 내 정보 변경 버튼 생성
         btnMyInfo = new LinearLayout(context);
         btnMyInfo.setOrientation(LinearLayout.HORIZONTAL);
+        btnMyInfo.setGravity(Gravity.CENTER_VERTICAL);
         btnMyInfo.setOnClickListener(this);
 
         ImageView imgMyInfo = new ImageView(context);
-        imgMyInfo.setImageResource(R.drawable.m_i_main_content_s);
+        imgMyInfo.setImageResource(R.drawable.m_i_setting_myinfo);
 
         TextView txtMyInfo = new TextView(context);
         txtMyInfo.setText("내 정보 변경");
+        txtMyInfo.setTextColor(Color.parseColor("#404040"));
+        txtMyInfo.setTextSize(16);
+        txtMyInfo.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtMyInfo.setGravity(Gravity.CENTER_VERTICAL);
 
-        btnMyInfo.addView(imgMyInfo, LayoutHelper.createLinear(20,20));
-        btnMyInfo.addView(txtMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+
+        btnMyInfo.addView(imgMyInfo, LayoutHelper.createLinear(20,19));
+        btnMyInfo.addView(txtMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         // 쇼핑몰 연동 설정 버튼 생성
         btnConnectShop = new LinearLayout(context);
         btnConnectShop.setOrientation(LinearLayout.HORIZONTAL);
+        btnConnectShop.setGravity(Gravity.CENTER_VERTICAL);
         btnConnectShop.setOnClickListener(this);
 
         ImageView imgConnectShop = new ImageView(context);
-        imgConnectShop.setImageResource(R.drawable.m_i_main_content_s);
+        imgConnectShop.setImageResource(R.drawable.m_i_main_shop);
 
         TextView txtConnectShop = new TextView(context);
         txtConnectShop.setText("쇼핑몰 연동 설정");
+        txtConnectShop.setTextColor(Color.parseColor("#404040"));
+        txtConnectShop.setTextSize(16);
+        txtConnectShop.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtConnectShop.setGravity(Gravity.CENTER_VERTICAL);
 
-        btnConnectShop.addView(imgConnectShop, LayoutHelper.createLinear(20,20));
-        btnConnectShop.addView(txtConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+        btnConnectShop.addView(imgConnectShop, LayoutHelper.createLinear(20,19));
+        btnConnectShop.addView(txtConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         // 알림 및 소리 버튼 생성
         btnNotificationCenter = new LinearLayout(context);
         btnNotificationCenter.setOrientation(LinearLayout.HORIZONTAL);
+        btnNotificationCenter.setGravity(Gravity.CENTER_VERTICAL);
         btnNotificationCenter.setOnClickListener(this);
 
         ImageView imgNotificationCenter = new ImageView(context);
-        imgNotificationCenter.setImageResource(R.drawable.m_i_main_content_s);
+        imgNotificationCenter.setImageResource(R.drawable.m_i_setting_alert);
 
         TextView txtNotificationCenter = new TextView(context);
         txtNotificationCenter.setText("알림 및 설정");
+        txtNotificationCenter.setTextColor(Color.parseColor("#404040"));
+        txtNotificationCenter.setTextSize(16);
+        txtNotificationCenter.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtNotificationCenter.setGravity(Gravity.CENTER_VERTICAL);
 
-        btnNotificationCenter.addView(imgNotificationCenter, LayoutHelper.createLinear(20,20));
-        btnNotificationCenter.addView(txtNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+        btnNotificationCenter.addView(imgNotificationCenter, LayoutHelper.createLinear(20,19));
+        btnNotificationCenter.addView(txtNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         //첫번째 덩어리에 버튼 3개 붙이기
-        lytMySetting.addView(btnMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
-        lytMySetting.addView(btnConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
-        lytMySetting.addView(btnNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytMySetting.addView(btnMyInfo, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
+        lytMySetting.addView(lytLine1);
+        lytMySetting.addView(btnConnectShop, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
+        lytMySetting.addView(lytLine2);
+        lytMySetting.addView(btnNotificationCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
 
         // 두번째 덩어리 생성
         LinearLayout lytSettingCenter = new LinearLayout(context);
         lytSettingCenter.setOrientation(LinearLayout.VERTICAL);
         lytSettingCenter.setBackgroundColor(Color.WHITE);
+        lytSettingCenter.setPadding(pxToDp.dpToPx(20),0,0,0);
+        lytSettingCenter.setGravity(Gravity.CENTER_VERTICAL);
 
         // 고객센터 버튼 생성
         btnCSCenter = new LinearLayout(context);
         btnCSCenter.setOrientation(LinearLayout.HORIZONTAL);
+        btnCSCenter.setGravity(Gravity.CENTER_VERTICAL);
         btnCSCenter.setOnClickListener(this);
 
         ImageView imgCSCenter = new ImageView(context);
-        imgCSCenter.setImageResource(R.drawable.m_i_main_content_s);
+        imgCSCenter.setImageResource(R.drawable.m_i_setting_cs);
 
         TextView txtCSCenter = new TextView(context);
         txtCSCenter.setText("고객센터");
+        txtCSCenter.setTextColor(Color.parseColor("#404040"));
+        txtCSCenter.setTextSize(16);
+        txtCSCenter.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtCSCenter.setGravity(Gravity.CENTER_VERTICAL);
 
-        btnCSCenter.addView(imgCSCenter, LayoutHelper.createLinear(20,20));
-        btnCSCenter.addView(txtCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+        btnCSCenter.addView(imgCSCenter, LayoutHelper.createLinear(20,19));
+        btnCSCenter.addView(txtCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         // 버전 정보 버튼 생성
         btnVersion = new LinearLayout(context);
         btnVersion.setOrientation(LinearLayout.HORIZONTAL);
+        btnVersion.setGravity(Gravity.CENTER_VERTICAL);
         btnVersion.setOnClickListener(this);
 
         ImageView imgVersion = new ImageView(context);
-        imgVersion.setImageResource(R.drawable.m_i_main_content_s);
+        imgVersion.setImageResource(R.drawable.m_i_setting_version);
 
         TextView txtVersion = new TextView(context);
         txtVersion.setText("버전정보");
+        txtVersion.setTextColor(Color.parseColor("#404040"));
+        txtVersion.setTextSize(16);
+        txtVersion.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtVersion.setGravity(Gravity.CENTER_VERTICAL);
 
         TextView txtExposeVersion = new TextView(context);
-        txtExposeVersion.setText("1.0.0");
+        txtExposeVersion.setText(BuildVars.BUILD_VERSION_STRING);
+        txtExposeVersion.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+        txtExposeVersion.setPadding(0, 0, pxToDp.dpToPx(23), 0);
+        txtExposeVersion.setTextSize(13);
+        txtExposeVersion.setTextColor(Color.parseColor("#999999"));
 
-        btnVersion.addView(imgVersion, LayoutHelper.createLinear(20,20));
-        btnVersion.addView(txtVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
-        Log.d("상은","버전정보 : " + BuildVars.BUILD_VERSION_STRING);
-//        btnVersion.addView(txtExposeVersion, LayoutHelper.createLinear(LayoutHelper.))
+        btnVersion.addView(imgVersion, LayoutHelper.createLinear(20,19));
+        btnVersion.addView(txtVersion, LayoutHelper.createLinear(LayoutHelper.WRAP_CONTENT, LayoutHelper.MATCH_PARENT));
+        btnVersion.addView(txtExposeVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT,LayoutHelper.MATCH_PARENT));
 
         // 탈퇴 버튼 생성
         btnDisConnect = new LinearLayout(context);
         btnDisConnect.setOrientation(LinearLayout.HORIZONTAL);
+        btnDisConnect.setGravity(Gravity.CENTER_VERTICAL);
         btnDisConnect.setOnClickListener(this);
 
         ImageView imgDisConnect = new ImageView(context);
-        imgDisConnect.setImageResource(R.drawable.m_i_main_content_s);
+        imgDisConnect.setImageResource(R.drawable.m_i_main_dis);
 
         TextView txtDisConnect = new TextView(context);
         txtDisConnect.setText("알림 및 설정");
+        txtDisConnect.setTextColor(Color.parseColor("#404040"));
+        txtDisConnect.setTextSize(16);
+        txtDisConnect.setPadding(pxToDp.dpToPx(23),0,0,0);
+        txtDisConnect.setGravity(Gravity.CENTER_VERTICAL);
 
-        btnDisConnect.addView(imgDisConnect, LayoutHelper.createLinear(20,20));
-        btnDisConnect.addView(txtDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 20));
+        btnDisConnect.addView(imgDisConnect, LayoutHelper.createLinear(20,19));
+        btnDisConnect.addView(txtDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
 
         //첫번째 덩어리에 버튼 3개 붙이기
-        lytSettingCenter.addView(btnCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
-        lytSettingCenter.addView(btnVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
-        lytSettingCenter.addView(btnDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 40));
+        lytSettingCenter.addView(btnCSCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
+        lytSettingCenter.addView(lytLine3);
+        lytSettingCenter.addView(btnVersion, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
+        lytSettingCenter.addView(lytLine4);
+        lytSettingCenter.addView(btnDisConnect, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 60));
 
         //settingLayout에 생성한 덩어리들 붙이기
-        settingLayout.addView(lytMySetting, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 120, 0, 0 ,0, 10));
-        settingLayout.addView(lytSettingCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 120));
+        settingLayout.addView(lytMySetting, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 180));
+        settingLayout.addView(lytLine5, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 1, 0, 0, 0, 10));
+        settingLayout.addView(lytLine6, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 1));
+        settingLayout.addView(lytSettingCenter, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 180));
+        settingLayout.addView(lytLine7, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 1));
     }
 }

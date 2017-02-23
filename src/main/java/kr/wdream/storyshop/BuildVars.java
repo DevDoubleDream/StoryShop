@@ -11,7 +11,7 @@ package kr.wdream.storyshop;
 public class BuildVars {
     public static boolean DEBUG_VERSION = false;
     public static int BUILD_VERSION = 851;
-    public static String BUILD_VERSION_STRING = "3.13";
+    public static String BUILD_VERSION_STRING = "1.0.0";
     public static int APP_ID = 95053; //obtain your own APP_ID at https://core.telegram.org/api/obtaining_api_id
     public static String APP_HASH = "97c13f3f7d9bcc92293b6ee61da79058"; //obtain your own APP_HASH at https://core.telegram.org/api/obtaining_api_id
     public static String HOCKEY_APP_HASH = "a6ea80d3b8b64c678493de6c0bbfd5f7";

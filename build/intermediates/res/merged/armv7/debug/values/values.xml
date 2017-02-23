@@ -1386,7 +1386,7 @@
         <item name="android:textSize">18sp</item>
     </style>
     <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">#ff8cd5db</item>
+        <item name="android:background">#ff7175FF</item>
         <item name="android:logo">@drawable/transparent</item>
         <item name="android:title">""</item>
     </style>

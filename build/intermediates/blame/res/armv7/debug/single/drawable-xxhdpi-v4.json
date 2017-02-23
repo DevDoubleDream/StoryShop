@@ -32,12 +32,12 @@
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_light_pressed.9.png",

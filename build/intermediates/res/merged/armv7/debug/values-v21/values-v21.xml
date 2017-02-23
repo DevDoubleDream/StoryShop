@@ -5,7 +5,7 @@
         <item name="android:textSize">18sp</item>
     </style>
     <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Material.Light.ActionBar">
-        <item name="android:background">#ff8cd5db</item>
+        <item name="android:background">#ff7175FF</item>
         <item name="android:logo">@drawable/transparent</item>
         <item name="android:title">""</item>
     </style>
@@ -26,15 +26,15 @@
         <item name="android:editTextStyle">@style/Theme.TMessages.EditText</item>
         <item name="android:actionBarItemBackground">@drawable/bar_selector_style</item>
         <item name="android:colorPrimaryDark">#33000000</item>
-        <item name="android:colorPrimary">#8cd5db</item>
+        <item name="android:colorPrimary">#7175ff</item>
         <item name="android:alertDialogTheme">@style/Theme.TMessages.Dialog.Alert</item>
-        <item name="android:colorControlActivated">#8cd5db</item>
+        <item name="android:colorControlActivated">#7175ff</item>
     </style>
     <style name="Theme.TMessages.BorderLessButton" parent="android:Widget.Material.Light.ButtonBar.AlertDialog">
-        <item name="android:textColor">#8cd5db</item>
+        <item name="android:textColor">#7175ff</item>
     </style>
     <style name="Theme.TMessages.Dialog.Alert" parent="android:style/Theme.Material.Light.Dialog.Alert">
-        <item name="android:colorAccent">#8cd5db</item>
+        <item name="android:colorAccent">#7175ff</item>
     </style>
     <style name="Theme.TMessages.EditText" parent="android:Widget.Material.Light.EditText">
         <item name="android:background">@drawable/edit_text</item>
@@ -59,8 +59,8 @@
         <item name="android:colorBackground">@android:color/white</item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimaryDark">#8cd5db</item>
-        <item name="android:colorPrimary">#8cd5db</item>
+        <item name="android:colorPrimaryDark">#7175ff</item>
+        <item name="android:colorPrimary">#7175ff</item>
     </style>
     <style name="Theme.TMessages.Transparent" parent="Theme.TMessages">
         <item name="android:windowIsTranslucent">true</item>

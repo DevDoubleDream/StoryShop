@@ -20,12 +20,12 @@
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/anim/no_animation.xml"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/anim/popup_in.xml",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/anim/popup_in.xml"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/anim/no_animation.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/anim/no_animation.xml"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/anim/popup_in.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/anim/popup_in.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/anim/icon_anim_fade_in.xml",
