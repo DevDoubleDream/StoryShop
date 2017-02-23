@@ -95,6 +95,7 @@
     <string name="AndOther_other">e altri %1$d</string>
     <string name="AndOther_two">e altri %1$d</string>
     <string name="AndOther_zero">e altri %1$d</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="ApplyLocalizationFile">Applica traduzione</string>
@@ -988,6 +989,9 @@
     <string name="RestoreEmailTroubleText">Se non puoi ripristinare l\'accesso alla tua e-mail, non ti resta che ricordarti la password o ripristinare il tuo account.</string>
     <string name="RestorePasswordNoEmailText">Siccome non hai fornito un\'email di recupero quando hai impostato la tua password, non ti resta che ricordarti la password o ripristinare il tuo account.</string>
     <string name="RestorePasswordNoEmailTitle">Spiacenti</string>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">Riprova</string>
     <string name="RevokeAlert">Sei sicuro di voler revocare questo link? Una volta fatto, nessuno potrà unirsi utilizzandolo.</string>
     <string name="RevokeAlertNewLink">Il precedente link di invito è inattivo. Ne è appena stato creato uno nuovo.</string>

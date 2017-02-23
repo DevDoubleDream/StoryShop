@@ -95,6 +95,7 @@
     <string name="AndOther_other">en %1$d anderen</string>
     <string name="AndOther_two">en %1$d anderen</string>
     <string name="AndOther_zero">en %1$d anderen</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram-bèta</string>
     <string name="ApplyLocalizationFile">Vertaling toepassen</string>
@@ -988,6 +989,9 @@
     <string name="RestoreEmailTroubleText">Bij verlies van je wachtwoord zul je je account moeten resetten.</string>
     <string name="RestorePasswordNoEmailText">Omdat je geen herstel-e-mailadres hebt opgegeven voor je wachtwoord zul je bij verlies van je wachtwoord je account moeten resetten.</string>
     <string name="RestorePasswordNoEmailTitle">Sorry</string>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">Opnieuw proberen</string>
     <string name="RevokeAlert">Deze link echt intrekken? Na intrekken kan niemand meer lid worden met de oude link.</string>
     <string name="RevokeAlertNewLink">De oude link is nu inactief. Een nieuwe link is aangemaakt.</string>

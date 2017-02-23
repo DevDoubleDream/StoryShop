@@ -95,6 +95,7 @@
     <string name="AndOther_other">و %1$d غيرهم</string>
     <string name="AndOther_two">و %1$d غيرهم</string>
     <string name="AndOther_zero">و %1$d غيرهم</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">تيليجرام</string>
     <string name="AppNameBeta">نسخة تيليجرام التجريبية</string>
     <string name="ApplyLocalizationFile">تطبيق ملف التعريب</string>
@@ -988,6 +989,9 @@
     <string name="RestoreEmailTroubleText">إذا لم تستطع الدخول على بريد الإسترداد الخاص بك، خياراتك المتبقية هي تذكّر كلمة المرور أو إعادة تعيين حسابك.</string>
     <string name="RestorePasswordNoEmailText">لم تقم بإضافة بريد إلكتروني لإستعادة كلمة المرور عند اختيارها، لذلك خياراتك المتبقية هي تذكّر كلمة المرور أو إعادة تعيين حسابك.</string>
     <string name="RestorePasswordNoEmailTitle">عذرًا</string>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">إعادة المحاولة</string>
     <string name="RevokeAlert">هل أنت متأكد من رغبتك في إلغاء الرابط؟ اذا قمت بذلك، لن يستطيع أحد الدخول باستخدامه.</string>
     <string name="RevokeAlertNewLink">رابط الدعوة السابق لا يعمل الآن. سيتم إنشاء رابط جديد.</string>

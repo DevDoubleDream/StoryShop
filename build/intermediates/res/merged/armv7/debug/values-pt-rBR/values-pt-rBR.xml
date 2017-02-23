@@ -95,6 +95,7 @@
     <string name="AndOther_other">e %1$d outros</string>
     <string name="AndOther_two">e %1$d outros</string>
     <string name="AndOther_zero">e %1$d outros</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="ApplyLocalizationFile">Aplicar arquivo de localização</string>
@@ -988,6 +989,9 @@
     <string name="RestoreEmailTroubleText">Se você não puder acessar o seu e-mail, as suas únicas opções são lembrar a senha ou apagar a sua conta.</string>
     <string name="RestorePasswordNoEmailText">Como você não indicou um e-mail de recuperação quando configurou a sua senha, as únicas opções restantes são lembrar a senha ou apagar a sua conta.</string>
     <string name="RestorePasswordNoEmailTitle">Desculpe</string>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">Tentar novamente</string>
     <string name="RevokeAlert">Você tem certeza que deseja desativar o link? Uma vez feito, ninguém conseguirá entrar usando-o.</string>
     <string name="RevokeAlertNewLink">Este link de convite está inativo. Um novo link foi gerado.</string>

@@ -3,6 +3,11 @@
 <!--Translation by Borja Campina, Edited by Victor Espinoza and Francisco Vila-->
 
 <resources>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
+
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="LanguageName">Español</string>

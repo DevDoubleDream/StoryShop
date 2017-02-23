@@ -67,7 +67,8 @@ public class DrawerProfileCell extends FrameLayout {
             if (ApplicationLoader.isCustomTheme() && ApplicationLoader.getCachedWallpaper() != null) {
                 paint.setColor(ApplicationLoader.getServiceMessageColor());
             } else {
-                paint.setColor(0xff427ba9);
+                // 클라우드 구름 색상 변경
+                paint.setColor(0xff4244a9);
             }
             canvas.drawCircle(getMeasuredWidth() / 2.0f, getMeasuredHeight() / 2.0f, AndroidUtilities.dp(34) / 2.0f, paint);
             int l = (getMeasuredWidth() - AndroidUtilities.dp(33)) / 2;
@@ -77,6 +78,7 @@ public class DrawerProfileCell extends FrameLayout {
         }
     }
 
+    //DrawerLayout 유저 사진
     public DrawerProfileCell(Context context) {
         super(context);
         setBackgroundColor(Theme.ACTION_BAR_PROFILE_COLOR);
@@ -103,6 +105,7 @@ public class DrawerProfileCell extends FrameLayout {
         addView(nameTextView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT, Gravity.LEFT | Gravity.BOTTOM, 16, 0, 76, 28));
 
         phoneTextView = new TextView(context);
+        //DrawerLayout 핸드폰 번호 색상
         phoneTextView.setTextColor(0xffc2e5ff);
         phoneTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
         phoneTextView.setLines(1);
@@ -160,7 +163,7 @@ public class DrawerProfileCell extends FrameLayout {
         } else {
             shadowView.setVisibility(INVISIBLE);
             // 여기 변경하면 TextView색 변경 됩니다.
-            phoneTextView.setTextColor(0xffc2e5ff);
+            phoneTextView.setTextColor(0xffc6c8ff);
             super.onDraw(canvas);
         }
     }

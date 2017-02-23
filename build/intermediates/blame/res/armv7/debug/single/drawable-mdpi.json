@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/pl_repeat1_active.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/pl_repeat1_active.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/ic_launcher_big.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/ic_launcher_big.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/pl_repeat1_active.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/pl_repeat1_active.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/list_pressed_holo_light.9.png",
@@ -28,16 +28,16 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/bot_music.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/book_logo.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/book_logo.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/corner_in_br.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/corner_in_br.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/edit_doneblue.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/edit_doneblue.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/corner_in_br.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/corner_in_br.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/book_logo.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/book_logo.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/miniplayer_pause.png",
@@ -84,40 +84,40 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/pause_g_s.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/msg_in.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/msg_in.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/media_doc_load.png",
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/media_doc_load.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/msg_in.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/msg_in.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/newmsg_divider.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/newmsg_divider.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/greydivider_bottom.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/greydivider_bottom.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/stickercounter.9.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/stickercounter.9.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/greydivider_bottom.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/greydivider_bottom.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/photogif.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/photogif.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tip4.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/tip4.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/btn_send_location_down.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/btn_send_location_down.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/intro4.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/intro4.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/btn_send_location_down.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/btn_send_location_down.9.png"
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tip4.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/tip4.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/phone_grey.png",
@@ -148,16 +148,16 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/miniplayer_play.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/notify_members_off.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/notify_members_off.png"
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/attach_hide1.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/attach_hide1.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/list_broadcast.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/list_broadcast.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/attach_hide1.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/attach_hide1.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/notify_members_off.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/notify_members_off.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/phone_grey.png",
@@ -260,12 +260,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/pl_next.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/sticker_added.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/sticker_added.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tool_curve.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/tool_curve.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/sticker_added.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/sticker_added.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/notify_members_on.png",
@@ -276,20 +276,20 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/photoborder.9.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/addmember.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/addmember.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/post_views_s.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-mdpi/post_views_s.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tool_warmth.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/tool_warmth.png"
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/addmember.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/addmember.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/ic_launcher_big.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/ic_launcher_big.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tool_warmth.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/tool_warmth.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/pl_back.png",
@@ -344,12 +344,12 @@
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/tool_rotate.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/greydivider_bottom.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/greydivider_bottom.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/ic_ab_doc.png",
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/ic_ab_doc.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/greydivider_bottom.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/greydivider_bottom.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/add_btn_pressed.9.png",
@@ -424,12 +424,12 @@
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/msg_out_selected.9.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/notify_members_on.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/notify_members_on.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/doc_actions_b_s.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/doc_actions_b_s.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/notify_members_on.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/notify_members_on.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/corner_in_tr.png",
@@ -468,12 +468,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-mdpi/pl_repeat.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/menu_settings.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/menu_settings.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/phone_activate.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/phone_activate.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/menu_settings.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/menu_settings.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/camera_revert2.png",
@@ -520,12 +520,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/src/main/res/drawable-mdpi/bluecircle.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/regbtn2.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/regbtn2.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tip3.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/tip3.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/regbtn2.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/regbtn2.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/playvideo_pressed.png",
@@ -556,12 +556,12 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/photo_outline.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/location_g.9.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/location_g.9.png"
-    },
-    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/camera_btn.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/TMessagesProj/src/main/res/drawable-mdpi/camera_btn.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/location_g.9.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/location_g.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/playvideo.png",
@@ -644,36 +644,36 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/ic_smiles_trend.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/profile_list.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/profile_list.png"
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/phototime.9.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/phototime.9.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/post_views_w.png",
         "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/post_views_w.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/phototime.9.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/phototime.9.png"
-    },
-    {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/nophotos.9.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/nophotos.9.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/profile_list.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/profile_list.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/msg_out_selected.9.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/msg_out_selected.9.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/plus.png",
-        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/plus.png"
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/nophotos.9.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/nophotos.9.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/video_time_l.png",
+        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/video_time_l.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/ic_masks_msk1.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/ic_masks_msk1.png"
     },
     {
-        "merged": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/video_time_l.png",
-        "source": "/Users/deobeuldeulim/Documents/Toptalk_ver2.0.3/Telegram_final_nonDsign/Telegram/TMessagesProj/src/main/res/drawable-mdpi/video_time_l.png"
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/plus.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/plus.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/drawable-mdpi/tip2.png",
@@ -5078,6 +5078,10 @@
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/photo_tools.png",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/drawable-mdpi/photo_tools.png"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/icon_3d_center.png",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/drawable-mdpi/icon_3d_center.png"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/drawable-mdpi/post_views_s.png",

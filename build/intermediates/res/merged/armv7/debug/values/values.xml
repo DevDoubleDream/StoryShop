@@ -124,6 +124,7 @@
     <string name="AndOther_other">and %1$d others</string>
     <string name="AndOther_two">and %1$d others</string>
     <string name="AndOther_zero">and %1$d others</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="ApplyLocalizationFile">Apply localization file</string>
@@ -1017,6 +1018,7 @@
     <string name="RestoreEmailTroubleText">If you can\'t restore access to your e-mail, your remaining options are either to remember your password or to reset your account.</string>
     <string name="RestorePasswordNoEmailText">Since you haven\'t provided a recovery e-mail when setting up your password, your remaining options are either to remember your password or to reset your account.</string>
     <string name="RestorePasswordNoEmailTitle">Sorry</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">Retry</string>
     <string name="RevokeAlert">Are you sure you want to revoke this link? Once the link is revoked, no one will be able to join using it.</string>
     <string name="RevokeAlertNewLink">The previous invite link is now inactive. A new link has been generated.</string>

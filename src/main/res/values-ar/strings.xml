@@ -3,6 +3,12 @@
 <!--Translation by Khalid Alaraifi-->
 
 <resources>
+
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
+
     <string name="AppName">تيليجرام</string>
     <string name="AppNameBeta">نسخة تيليجرام التجريبية</string>
     <string name="LanguageName">العربية</string>

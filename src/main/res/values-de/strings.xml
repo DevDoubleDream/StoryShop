@@ -3,6 +3,12 @@
 <!--Translation by iLLogical2007, DanielGroeger and everyone from https://github.com/DrKLO/Telegram/pull/129 whom I didn't notice -->
 
 <resources>
+
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
+
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="LanguageName">Deutsch</string>

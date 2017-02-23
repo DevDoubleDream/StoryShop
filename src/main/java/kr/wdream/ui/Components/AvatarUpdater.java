@@ -133,6 +133,7 @@ public class AvatarUpdater implements NotificationCenter.NotificationCenterDeleg
             } else if (uri != null) {
                 args.putParcelable("photoUri", uri);
             }
+
             PhotoCropActivity photoCropActivity = new PhotoCropActivity(args);
             photoCropActivity.setDelegate(this);
             activity.presentFragment(photoCropActivity);

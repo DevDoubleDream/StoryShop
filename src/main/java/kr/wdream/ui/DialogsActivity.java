@@ -1696,7 +1696,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         LinearLayout lytLine7 = new LinearLayout(context);
 
         LinearLayout.LayoutParams paramLine = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, pxToDp.dpToPx(1));
-        paramLine.setMargins(pxToDp.dpToPx(56),0,0,0);
+        paramLine.setMargins(pxToDp.dpToPx(36),0,0,0);
 
         lytLine1.setLayoutParams(paramLine);
         lytLine2.setLayoutParams(paramLine);

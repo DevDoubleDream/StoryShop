@@ -34,9 +34,9 @@ public class Theme {
     public static final int ACTION_BAR_PLAYER_COLOR = 0xffffffff;
     public static final int ACTION_BAR_TITLE_COLOR = 0xffffffff;
     public static final int ACTION_BAR_SUBTITLE_COLOR = 0xffd5e8f7;
-    public static final int ACTION_BAR_PROFILE_COLOR = 0xff7175FF;
+    public static final int ACTION_BAR_PROFILE_COLOR = 0xff7175FF; // DrawerLayout ProfileBar Color
     public static final int ACTION_BAR_PROFILE_SUBTITLE_COLOR = 0xffd7eafa;
-    public static final int ACTION_BAR_MAIN_AVATAR_COLOR = 0xff5085b1;
+    public static final int ACTION_BAR_MAIN_AVATAR_COLOR = 0xffdddef1; // 사용자 사진이 없을 때 Profile 색상
     public static final int ACTION_BAR_ACTION_MODE_TEXT_COLOR = 0xff737373;
     public static final int ACTION_BAR_SELECTOR_COLOR = 0xff406d94;
 

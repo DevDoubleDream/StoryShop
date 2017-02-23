@@ -95,6 +95,7 @@
     <string name="AndOther_other">und %1$d andere</string>
     <string name="AndOther_two">und %1$d andere</string>
     <string name="AndOther_zero">und %1$d andere</string>
+    <string name="ApiShopUrl">http://api.shopminiso.com/</string>
     <string name="AppName">Telegram</string>
     <string name="AppNameBeta">Telegram Beta</string>
     <string name="ApplyLocalizationFile">Sprachdatei benutzen</string>
@@ -988,6 +989,9 @@
     <string name="RestoreEmailTroubleText">Wenn du nicht in deine Emails kommst, kannst du nur hoffen, dass dir dein Kennwort wieder einfällt oder du musst dein Telegram Konto zurückzusetzen.</string>
     <string name="RestorePasswordNoEmailText">Da du für diesen Fall keine Email Adresse hinterlegt hast, kannst du nur noch hoffen, dass dir dein Kennwort wieder einfällt oder du musst dein Telegram Konto zurückzusetzen.</string>
     <string name="RestorePasswordNoEmailTitle">Tut uns leid</string>
+    <string name="ResultCodeError">-1</string>
+    <string name="ResultCodeSuccess">1</string>
+    <string name="ResultMsgError">관리자에게 문의하세요.</string>
     <string name="Retry">Erneut versuchen</string>
     <string name="RevokeAlert">Bist du sicher, dass du diesen Link widerrufen willst? Dadurch kann ihn niemand mehr nutzen.</string>
     <string name="RevokeAlertNewLink">Der vorige Link ist nun inaktiv. Ein neuer Einladungslink wurde gerade erstellt.</string>
