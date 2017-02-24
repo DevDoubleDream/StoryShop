@@ -1,15 +1,27 @@
 package kr.wdream.Wdream.Adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
+import kr.wdream.Wdream.Models.ConstantModel;
 import kr.wdream.Wdream.Models.Product;
 import kr.wdream.storyshop.R;
 
@@ -22,6 +34,10 @@ public class ProductsAdapter extends BaseAdapter {
     private ArrayList<Product> arrayProduct = new ArrayList<Product>();
     private Context context;
     private LayoutInflater inflater;
+
+    private ViewHolder holder;
+
+    private Bitmap bitmap;
 
     public ProductsAdapter(Context context, ArrayList<Product> arrayProduct){
         this.context      = context;
@@ -52,7 +68,6 @@ public class ProductsAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
         if (convertView == null) {
             holder = new ViewHolder();
 
@@ -68,6 +83,33 @@ public class ProductsAdapter extends BaseAdapter {
         }
 
         Product product = arrayProduct.get(position);
+
+        URL url = null;
+        try {
+            url = new URL("http://data.shopminiso.com" + product.getStrProductImgPath());
+
+
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inSampleSize = 2; // 메모리 부족을 방지하기 위한 샘플링
+
+            InputStream inputStream = connection.getInputStream();
+
+            bitmap = BitmapFactory.decodeStream(inputStream, null, options);
+
+            holder.imgProduct.setImageBitmap(bitmap);
+
+        } catch (Exception e){
+
+        }
+
+
+
+        holder.txtTitle.setText(product.getStrProductTitle());
+        holder.txtPrice.setText(product.getStrItemMoney());
 
         return convertView;
     }

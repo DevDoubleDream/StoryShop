@@ -59,6 +59,7 @@ import kr.wdream.Wdream.Adapter.ContentsAdapter;
 import kr.wdream.Wdream.Adapter.SettingAdapter;
 import kr.wdream.Wdream.Cell.ContentsCell;
 import kr.wdream.Wdream.ShoppingDialog;
+import kr.wdream.Wdream.ShoppingMainActivity;
 import kr.wdream.Wdream.Util.ContentsUtil;
 import kr.wdream.Wdream.common.PxToDp;
 import kr.wdream.storyshop.AndroidUtilities;
@@ -922,16 +923,6 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         RelativeLayout.LayoutParams contentParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         contentParams.addRule(RelativeLayout.BELOW, lytTab.getId());
 
-
-        ArrayList<String> settingContent = new ArrayList<String>();
-        settingContent.add(0, "내 정보변경");
-        settingContent.add(1, "내 정보변경");
-        settingContent.add(2, "내 정보변경");
-        settingContent.add(3, "내 정보변경");
-        settingContent.add(4, "내 정보변경");
-        settingContent.add(5, "내 정보변경");
-        settingContent.add(6, "내 정보변경");
-
         // Contents Layout 생성
         GridView gridContents = new GridView(context);
         gridContents.setNumColumns(GridView.AUTO_FIT);
@@ -941,6 +932,32 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         gridContents.setAdapter(contentsAdapter);
 
         contentLayout.addView(gridContents, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+
+        gridContents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch(position){
+                    case 0:
+
+                        Log.d("상은", "grid0");
+                        Intent intent = new Intent(context, ShoppingMainActivity.class);
+                        context.startActivity(intent);
+                        break;
+
+                    case 1:
+                        Log.d("상은", "grid1");
+                        break;
+
+                    case 2:
+                        Log.d("상은", "grid2");
+                        break;
+
+                    case 3:
+                        Log.d("상은", "grid3");
+                        break;
+                }
+            }
+        });
 
         // Setting Layout 생성하기
         settingLayout = new LinearLayout(context);

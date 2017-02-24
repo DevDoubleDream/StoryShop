@@ -1,5 +1,7 @@
 package kr.wdream.Wdream.Util;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -16,7 +18,7 @@ import kr.wdream.storyshop.R;
 
 public class ShoppingUtil {
 
-    private static String url = ConstantModel.API_SHOP_URL + "product/process.json";
+    private static String url = ConstantModel.API_SHOP_URL + "product/process.php";
 
     public static ArrayList<Product> GetProductList(HashMap<String,String> params) throws Exception {
         ArrayList<Product> resultArray = new ArrayList<Product>();
@@ -32,10 +34,12 @@ public class ShoppingUtil {
         code = result.getString("CODE");
 
         if(ConstantModel.GET_API_SUCCESS.equals(code)) {
-            JSONArray data = response.getJSONArray("DATA");
+            JSONObject data = response.getJSONObject("DATA");
 
-            for (int i = 0; i < data.length(); i++) {
-                JSONObject eachProduct = data.getJSONObject(i);
+            JSONArray array = data.getJSONArray("LIST");
+
+            for (int i = 0; i < array.length(); i++) {
+                JSONObject eachProduct = array.getJSONObject(i);
 
                 String productID = eachProduct.getString("ID");
                 String productTitle = eachProduct.getString("ITEM_TITLE");

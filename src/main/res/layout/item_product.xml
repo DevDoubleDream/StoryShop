@@ -13,12 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtTitle"
+        android:textColor="@android:color/black"
         android:gravity="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtPrice"
+        android:textColor="@android:color/black"
         android:gravity="center"/>
 
 </LinearLayout>

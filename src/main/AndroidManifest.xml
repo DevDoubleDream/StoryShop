@@ -116,6 +116,11 @@
             </intent-filter>
             <meta-data android:name="android.service.chooser.chooser_target_service" android:value=".TgChooserTargetService" />
         </activity>
+
+        <activity android:name="kr.wdream.Wdream.ShoppingMainActivity"/>
+        <activity android:name="kr.wdream.Wdream.ProductInfoActivity"/>
+
+
         <activity
             android:name="kr.wdream.ui.ShareActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"

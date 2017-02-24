@@ -64,19 +64,19 @@ public class ContentsAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-            if (convertView == null) {
-                holder = new ViewHolder();
+        if (convertView == null) {
+            holder = new ViewHolder();
 
-                convertView = inflater.inflate(R.layout.item_contents, null);
+            convertView = inflater.inflate(R.layout.item_contents, null);
 
-                holder.btnMenu = (LinearLayout)convertView.findViewById(R.id.btnMenu);
-                holder.imgMenuIcon = (ImageView) convertView.findViewById(R.id.imgMenuButton);
-                holder.txtMenuTitle = (TextView) convertView.findViewById(R.id.txtMenuTitle);
+            holder.btnMenu = (LinearLayout)convertView.findViewById(R.id.btnMenu);
+            holder.imgMenuIcon = (ImageView) convertView.findViewById(R.id.imgMenuButton);
+            holder.txtMenuTitle = (TextView) convertView.findViewById(R.id.txtMenuTitle);
 
-                convertView.setTag(holder);
-            } else {
-                holder = (ViewHolder)convertView.getTag();
-            }
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder)convertView.getTag();
+        }
 
 
         int redId = context.getResources().getIdentifier("@drawable/" + resourceArray[position], "drawable", context.getPackageName());
@@ -84,14 +84,7 @@ public class ContentsAdapter extends BaseAdapter {
 
         holder.imgMenuIcon.setImageResource(redId);
 
-            holder.txtMenuTitle.setText(btnList[position]);
-
-            holder.btnMenu.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
+        holder.txtMenuTitle.setText(btnList[position]);
 
         return convertView;
     }

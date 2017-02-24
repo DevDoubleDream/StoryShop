@@ -14,6 +14,8 @@ public class ConstantModel {
     // HttpRequest Result
     public static final int GET_PRODUCTLIST_SUCESS  = 2000;
     public static final int GET_PRODUCTLIST_FAILURE = 2001;
+    public static final int ADD_PRODUCTLIST_SUCESS  = 2002;
+    public static final int ADD_PRODUCTLIST_FAILURE = 2003;
 
     public static final String GET_API_SUCCESS      = "1";
     public static final String GET_API_FAILURE      = "-1";
@@ -21,4 +23,8 @@ public class ConstantModel {
     // request Code & MSG
     public static final String RESULT_ERROR_CODE = LocaleController.getString("ResultCodeError", R.string.ResultCodeError);
     public static final String RESULT_ERROR_MSG  = LocaleController.getString("ResultMsgError", R.string.ResultMsgError);
+
+    // Count for getting products
+    public static int page = 1;
+    public static int pageSize = 20;
 }
