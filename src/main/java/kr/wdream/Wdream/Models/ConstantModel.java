@@ -10,12 +10,15 @@ import kr.wdream.storyshop.R;
 public class ConstantModel {
     // Http URL
     public static final String API_SHOP_URL = LocaleController.getString("ApiShopUrl", R.string.ApiShopUrl);
+    public static final String API_IMAGE_URL = "http://data.shopminiso.com";
 
     // HttpRequest Result
-    public static final int GET_PRODUCTLIST_SUCESS  = 2000;
-    public static final int GET_PRODUCTLIST_FAILURE = 2001;
-    public static final int ADD_PRODUCTLIST_SUCESS  = 2002;
-    public static final int ADD_PRODUCTLIST_FAILURE = 2003;
+    public static final int GET_PRODUCTLIST_SUCESS    = 2000;
+    public static final int GET_PRODUCTLIST_FAILURE   = 2001;
+    public static final int ADD_PRODUCTLIST_SUCESS    = 2002;
+    public static final int ADD_PRODUCTLIST_FAILURE   = 2003;
+    public static final int GET_PRODUCT_IMAGE_SUCCESS = 2004;
+    public static final int GET_PRODUCT_IMAGE_FAILURE = 2005;
 
     public static final String GET_API_SUCCESS      = "1";
     public static final String GET_API_FAILURE      = "-1";

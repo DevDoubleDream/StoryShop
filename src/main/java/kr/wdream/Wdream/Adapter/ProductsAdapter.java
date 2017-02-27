@@ -86,7 +86,7 @@ public class ProductsAdapter extends BaseAdapter {
 
         URL url = null;
         try {
-            url = new URL("http://data.shopminiso.com" + product.getStrProductImgPath());
+            url = new URL(ConstantModel.API_IMAGE_URL + product.getStrProductImgPath());
 
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();

@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="lytTab" type="id"/>
+
+    <item name="txtTitlt" type="id"/>
+    <item name="txtPrice" type="id"/>
+    <item name="imgProduct" type="id"/>
+
+    <item name="btnOpen" type="id"/>
+    <item name="btnBuyInFloating" type="id"/>
+
+    <item name="lytOptionTitle" type="id"/>
+    <item name="txtOptionTitle" type="id"/>
+
+    <item name="listOption" type="id"/>
+
+    <item name="listSelected" type="id"/>
 </resources>

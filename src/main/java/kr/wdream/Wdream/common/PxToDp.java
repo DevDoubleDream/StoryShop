@@ -14,7 +14,7 @@ public class PxToDp {
     public PxToDp(Context context){
         c = context;
     }
-    public int pxToDp(int pixel){
+    public static int pxToDp(int pixel){
         Resources resources = c.getResources();
         DisplayMetrics metrics = resources.getDisplayMetrics();
 
@@ -23,7 +23,7 @@ public class PxToDp {
         return dp;
     }
 
-    public int dpToPx(int dp){
+    public static int dpToPx(int dp){
         float scale = c.getResources().getDisplayMetrics().density;
         int px = (int) (dp * scale + 0.5f);
 
