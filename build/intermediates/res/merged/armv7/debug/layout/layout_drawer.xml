@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@color/productInfoTitleColor"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUserName"
+            android:textSize="22.011sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="님"
+            android:textSize="16.675sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="35dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogout"
+            android:text="로그아웃"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="34.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|right">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnBack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50.025dp"
+        android:id="@+id/btnCategory"
+        android:text="카테고리"
+        android:textSize="16.675sp"
+        android:textColor="@color/productInfoTitleColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@android:color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/productInfoTitleColor"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/btnPromotionLine"
+        android:background="@color/productInfoTitleColor"
+        android:visibility="gone"></RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50.025dp"
+        android:id="@+id/btnMyPage"
+        android:text="주문내역 조회"
+        android:textSize="16.675sp"
+        android:textColor="@color/productInfoTitleColor"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/productInfoTitleColor"></RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDrawerBosket"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.025dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="장바구니"
+                android:textColor="@color/productInfoTitleColor"
+                android:textSize="16.675sp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더보기"
+                android:textSize="10.672sp"
+                android:textColor="@color/productInfoTitleColor"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="2dp"
+                android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/productInfoTitleColor"></RelativeLayout>
+</LinearLayout>

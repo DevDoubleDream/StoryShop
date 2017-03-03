@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/white">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:id="@+id/imgProduct"/>
+        <ImageView
+            android:layout_width="167dp"
+            android:layout_height="167dp"
+            android:id="@+id/imgProduct"
+            android:layout_marginBottom="15dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtTitle"
-        android:textColor="@android:color/black"
-        android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:textColor="@color/mainProductNameColor"
+            android:textSize="12sp"
+            android:layout_marginBottom="26dp"
+            android:paddingLeft="13dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtPrice"
-        android:textColor="@android:color/black"
-        android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/mainPriceColor"
+            android:paddingLeft="13dp"
+            android:layout_marginBottom="14dp"/>
+
+
 
 </LinearLayout>

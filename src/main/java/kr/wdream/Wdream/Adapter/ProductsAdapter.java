@@ -86,7 +86,7 @@ public class ProductsAdapter extends BaseAdapter {
 
         URL url = null;
         try {
-            url = new URL(ConstantModel.API_IMAGE_URL + product.getStrProductImgPath());
+            url = new URL(product.getStrProductImgPath());
 
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -105,8 +105,6 @@ public class ProductsAdapter extends BaseAdapter {
         } catch (Exception e){
 
         }
-
-
 
         holder.txtTitle.setText(product.getStrProductTitle());
         holder.txtPrice.setText(product.getStrItemMoney());

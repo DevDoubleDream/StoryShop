@@ -9,27 +9,20 @@ public class Product {
     //MARK:- Properties
     private String strProductID; // 해당 상품의 아이디 (옵션이 있을 수 있기 때문)
     private String strProductTitle;
-    private String strProductKeyword;
     private String strProductImgPath;
 
-    private String strItemCode; // 해당 상품의 코드 (한 상품의 다양한 옵션들도 코드는 동일함)
     private String strItemMoney;
+    private String strProductDetail;
 
 
-    public Product( String productID, String productTitle, String productKeyword, String productImgPath, String itemCode, String itemMoney){
-
+    public Product( String productID, String productTitle, String productImgPath, String itemMoney, String productDetail){
 
         strProductID      = productID;
         strProductTitle   = productTitle;
-        strProductKeyword = productKeyword;
         strProductImgPath = productImgPath;
 
-        strItemCode       = itemCode;
         strItemMoney      = itemMoney;
-    }
-
-    public String getStrItemCode() {
-        return strItemCode;
+        strProductDetail  = productDetail;
     }
 
     public String getStrItemMoney() {
@@ -44,12 +37,12 @@ public class Product {
         return strProductImgPath;
     }
 
-    public String getStrProductKeyword() {
-        return strProductKeyword;
-    }
 
     public String getStrProductTitle() {
         return strProductTitle;
     }
 
+    public String getStrProductDetail() {
+        return strProductDetail;
+    }
 }

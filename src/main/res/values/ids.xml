@@ -15,4 +15,8 @@
     <item name="listOption" type="id"/>
 
     <item name="listSelected" type="id"/>
+
+    <item name="btnMenu" type="id"/>
+
+    <item name="testLayout" type="id"/>
 </resources>

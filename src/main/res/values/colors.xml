@@ -4,4 +4,12 @@
     <color name="lightgray">#EEEEEE</color>
     <color name="gray">#707070</color>
     <color name="orange">#f39a00</color>
+
+    <color name="productInfoTitleColor">#111111</color>
+    <color name="mainProductNameColor">#212121</color>
+    <color name="mainPriceColor">#FF5A48</color>
+    <color name="shopNaviTitleColor">#00CCE9</color>
+    <color name="shopTxtTitleColor">#FEFEFE</color>
+    <color name="layerSeperateLine">#E5E5E5</color>
+    <color name="productInfoDetailColor">#9B9B9B</color>
 </resources>

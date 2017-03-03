@@ -84,6 +84,10 @@
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/Telegram/StoryShop/src/main/res/layout/dialog_nation.xml"
     },
     {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/layout/layout_drawer.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/layout/layout_drawer.xml"
+    },
+    {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/layout/hockeyapp_view_feedback_message.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/exploded-aar/net.hockeyapp.android/HockeySDK/4.0.1/res/layout/hockeyapp_view_feedback_message.xml"
     },
@@ -442,6 +446,10 @@
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/layout/hockeyapp_activity_expiry_info.xml",
         "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram/TMessagesProj/build/intermediates/exploded-aar/net.hockeyapp.android/HockeySDK/4.0.1/res/layout/hockeyapp_activity_expiry_info.xml"
+    },
+    {
+        "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/build/intermediates/res/merged/armv7/debug/layout/activity_productinfo.xml",
+        "source": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/StoryShopmAa/StroyShopmAa/StoryShop/src/main/res/layout/activity_productinfo.xml"
     },
     {
         "merged": "/Users/deobeuldeulim/Documents/AndroidProject/Telegram_final_nonDsign/Telegram_final_nonDsign/Telegram/TMessagesProj/build/intermediates/res/merged/armv7/debug/layout/activity_test.xml",

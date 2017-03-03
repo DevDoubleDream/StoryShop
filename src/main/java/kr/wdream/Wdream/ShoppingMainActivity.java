@@ -2,17 +2,23 @@ package kr.wdream.Wdream;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Px;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -26,6 +32,7 @@ import kr.wdream.Wdream.Models.ConstantModel;
 import kr.wdream.Wdream.Models.Product;
 import kr.wdream.Wdream.Util.AddProductTask;
 import kr.wdream.Wdream.Util.GetProductTask;
+import kr.wdream.Wdream.common.PxToDp;
 import kr.wdream.storyshop.R;
 import kr.wdream.ui.Components.LayoutHelper;
 
@@ -45,9 +52,11 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
 
     private RelativeLayout  navigationBar;
     private TextView        txtNaviTitle;
-    private ImageButton     btnBasket;
-    private ImageButton     btnMenu;
+    private ImageView     btnBasket;
+    private ImageView     btnMenu;
+    private ImageView     btnFinish;
 
+    private ImageView       imgBanner;
     private GridView        gridProduct;
     private ProductsAdapter adapter;
 
@@ -106,31 +115,94 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
     }
 
     private void initView(){
+        drawerLayout    = new DrawerLayout(this);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(drawerLayout);
+
+        //DrawerLayout 추가
+        final ListView navList = new ListView(this);
+        DrawerLayout.LayoutParams paramDrawer = new DrawerLayout.LayoutParams(300, ViewGroup.LayoutParams.MATCH_PARENT, Gravity.START);
+
         main = new LinearLayout(this);
         main.setOrientation(LinearLayout.VERTICAL);
-        setContentView(main);
 
-        drawerLayout    = new DrawerLayout(this);
+        drawerLayout.addView(main, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT,LayoutHelper.MATCH_PARENT));
+        drawerLayout.addView(navList, paramDrawer);
+
         listDrawer      = new ListView(this);
 
         navigationBar   = new RelativeLayout(this);
         txtNaviTitle    = new TextView(this);
-        btnMenu         = new ImageButton(this);
-        btnBasket       = new ImageButton(this);
+        btnMenu         = new ImageView(this);
+        btnBasket       = new ImageView(this);
+        btnFinish       = new ImageView(this);
 
+        imgBanner       = new ImageView(this);
         gridProduct     = new GridView(this);
 
 
+        //navigationBar 버튼 추가
+        RelativeLayout.LayoutParams paramMenu = new RelativeLayout.LayoutParams(PxToDp.dpToPx(26), PxToDp.dpToPx(12));
+        paramMenu.addRule(RelativeLayout.CENTER_VERTICAL);
+        paramMenu.setMargins(0, 0, PxToDp.dpToPx(11), 0);
+        btnMenu.setId(R.id.btnMenu);
+        btnMenu.setLayoutParams(paramMenu);
+        btnMenu.setImageResource(R.drawable.m_i_shop_menu);
+        btnMenu.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        btnMenu.setBackgroundColor(Color.TRANSPARENT);
+
+        RelativeLayout.LayoutParams paramBasket = new RelativeLayout.LayoutParams(PxToDp.dpToPx(22), PxToDp.dpToPx(18));
+        paramBasket.addRule(RelativeLayout.RIGHT_OF, R.id.btnMenu);
+        paramBasket.addRule(RelativeLayout.CENTER_VERTICAL);
+        btnBasket.setLayoutParams(paramBasket);
+        btnBasket.setImageResource(R.drawable.m_i_shop_basket);
+        btnBasket.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        btnBasket.setBackgroundColor(Color.TRANSPARENT);
+
+
+        RelativeLayout.LayoutParams paramNaviTitle = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        paramNaviTitle.addRule(RelativeLayout.CENTER_IN_PARENT);
+        txtNaviTitle.setLayoutParams(paramNaviTitle);
+        txtNaviTitle.setText("쇼핑몰");
+        txtNaviTitle.setTextColor(Color.parseColor("#FEFEFE"));
+        txtNaviTitle.setTextSize(20);
+
+        RelativeLayout.LayoutParams paramFinish = new RelativeLayout.LayoutParams(PxToDp.dpToPx(15), PxToDp.dpToPx(15));
+        paramFinish.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+        paramFinish.addRule(RelativeLayout.CENTER_IN_PARENT);
+        btnFinish.setLayoutParams(paramFinish);
+        btnFinish.setImageResource(R.drawable.m_i_shop_finish);
+        btnFinish.setScaleType(ImageView.ScaleType.FIT_XY);
+        btnFinish.setBackgroundColor(Color.TRANSPARENT);
+
+
+        navigationBar.setPadding(PxToDp.dpToPx(18), 0, PxToDp.dpToPx(18), 0);
+        navigationBar.setBackgroundResource(R.color.shopNaviTitleColor);
+        navigationBar.addView(txtNaviTitle);
+        navigationBar.addView(btnMenu);
+        navigationBar.addView(btnBasket);
+        navigationBar.addView(btnFinish);
+
         //UI 기능 구현
+        imgBanner.setImageResource(R.drawable.test_banner);
+        imgBanner.setScaleType(ImageView.ScaleType.FIT_XY);
+
         gridProduct.setNumColumns(GridView.AUTO_FIT);
+        gridProduct.setHorizontalSpacing(PxToDp.dpToPx(14));
+        gridProduct.setVerticalSpacing(PxToDp.dpToPx(8));
         gridProduct.setGravity(Gravity.CENTER);
+        gridProduct.setPadding(PxToDp.dpToPx(8),PxToDp.dpToPx(16), PxToDp.dpToPx(8), 0);
+        gridProduct.setBackgroundResource(R.color.lightgray);
 
         gridProduct.setOnItemClickListener(this);
         gridProduct.setOnScrollListener(this);
         btnBasket.setOnClickListener(this);
         btnMenu.setOnClickListener(this);
+        btnFinish.setOnClickListener(this);
 
 
+        main.addView(navigationBar, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 50));
+        main.addView(imgBanner, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 155));
         main.addView(gridProduct, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
     }
 
@@ -142,6 +214,10 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
 
         if (v == btnMenu) {
 
+        }
+
+        if (v == btnFinish) {
+            finish();
         }
     }
 
@@ -156,10 +232,9 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
 
         intent.putExtra("title", clickProduct.getStrProductTitle());
         intent.putExtra("price", clickProduct.getStrItemMoney());
-        intent.putExtra("itemCode",clickProduct.getStrItemCode());
         intent.putExtra("productID", clickProduct.getStrProductID());
         intent.putExtra("imagePath", clickProduct.getStrProductImgPath());
-        intent.putExtra("keyword", clickProduct.getStrProductKeyword());
+        intent.putExtra("productDetail", clickProduct.getStrProductDetail());
 
         startActivity(intent);
     }

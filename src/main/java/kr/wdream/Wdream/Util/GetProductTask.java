@@ -37,10 +37,11 @@ public class GetProductTask extends AsyncTask {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        paramProducts.put("cmd", "/product/process.json");
-        paramProducts.put("mode", "L");
-        paramProducts.put("page", page);
-        paramProducts.put("pagesize", pageSize);
+        paramProducts.put("cmd", "zone");
+        paramProducts.put("dist_dmn_nm", ConstantModel.SHOPPING_DOMAIN);
+        paramProducts.put("zone_id", "LYMBCNTZN2CAT0000");
+//        paramProducts.put("page", page);
+//        paramProducts.put("pagesize", pageSize);
     }
 
     @Override
