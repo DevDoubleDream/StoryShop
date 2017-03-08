@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgProduct" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitle"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPrice"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/btnMinus"
+            android:src="@drawable/cancel_big"/>
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:id="@+id/edtCount"
+            android:layout_toRightOf="@+id/btnMinus"
+            android:background="@android:color/white"
+            android:inputType="number"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/btnPlus"
+            android:layout_toRightOf="@+id/txtCount"
+            android:src="@drawable/cancel_big"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:id="@+id/btnChange"
+            android:layout_alignParentRight="true"
+            android:text="수량변경"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

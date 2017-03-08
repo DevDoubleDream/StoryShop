@@ -36,19 +36,17 @@ public class ShopLoginUtil {
 
             JSONObject data = response.getJSONObject("DATA");
 
-            String userId = data.getString("SS_USER_ID");
-            String userName = data.getString("SS_USER_NAME");
-            String userSex = data.getString("SS_USER_SEX");
-            String userCode = data.getString("SS_USER_MBCD");
-            String userCardNo = data.getString("SS_USER_CARDNO");
-            String userDomain = data.getString("SS_USER_DOMAIN");
+            String userId = data.getString("ID");
+            String userCode = data.getString("MEM_NO");
+            String userName = data.getString("NAME");
+            String rgstViz = data.getString("RGST_VIZ");
+            String vizAt = data.getString("VIZ_AT");
 
             resultLogin.put("userId", userId);
-            resultLogin.put("userName", userName);
-            resultLogin.put("userSex", userSex);
             resultLogin.put("userCode", userCode);
-            resultLogin.put("userCardNo", userCardNo);
-            resultLogin.put("userDomain", userDomain);
+            resultLogin.put("userName", userName);
+            resultLogin.put("rgstViz", rgstViz);
+            resultLogin.put("vizAt", vizAt);
 
         }
 

@@ -1,13 +1,15 @@
-package kr.wdream.Wdream.Util;
+package kr.wdream.Wdream.Task;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
 import java.util.HashMap;
 
 import kr.wdream.Wdream.Models.ConstantModel;
+import kr.wdream.Wdream.Util.ShoppingUtil;
 
 /**
  * Created by deobeuldeulim on 2017. 3. 2..
@@ -16,7 +18,7 @@ import kr.wdream.Wdream.Models.ConstantModel;
 public class GetEachProductTask extends AsyncTask {
     //Properties
     private HashMap<String,String> paramProduct = new HashMap<String,String>();
-    private HashMap<String,String> resultProduct = new HashMap<String,String>();
+    private HashMap<String,Object> resultProduct = new HashMap<String,Object>();
 
     private String itemCode;
     private Handler handler;
@@ -32,9 +34,10 @@ public class GetEachProductTask extends AsyncTask {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        paramProduct.put("cmd", "/product/process.json");
+        paramProduct.put("cmd", "shopproduct");
         paramProduct.put("mode", "R");
-        paramProduct.put("item_code", itemCode);
+        paramProduct.put("dist_dmn_nm", ConstantModel.SHOPPING_DOMAIN);
+        paramProduct.put("prdt_id", itemCode);
 
         msg = new Message();
         bundle = new Bundle();
@@ -45,12 +48,15 @@ public class GetEachProductTask extends AsyncTask {
         try {
             resultProduct = ShoppingUtil.GetEachProduct(paramProduct);
 
+
             bundle.putSerializable("resultProduct", resultProduct);
 
             msg.what = ConstantModel.GET_EACH_PRODUCT_SUCCESS;
             msg.setData(bundle);
 
             handler.sendMessage(msg);
+
+            Log.d("상은", "resultProduct: " + resultProduct.get("code"));
 
         } catch (Exception e) {
             e.printStackTrace();

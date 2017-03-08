@@ -41,12 +41,12 @@ public final class R {
 		public static final int zOrderOnTop = 0x7f010011;
 	}
 	public static final class color {
-		public static final int common_google_signin_btn_text_dark = 0x7f0a001d;
+		public static final int common_google_signin_btn_text_dark = 0x7f0a0022;
 		public static final int common_google_signin_btn_text_dark_default = 0x7f0a0000;
 		public static final int common_google_signin_btn_text_dark_disabled = 0x7f0a0001;
 		public static final int common_google_signin_btn_text_dark_focused = 0x7f0a0002;
 		public static final int common_google_signin_btn_text_dark_pressed = 0x7f0a0003;
-		public static final int common_google_signin_btn_text_light = 0x7f0a001e;
+		public static final int common_google_signin_btn_text_light = 0x7f0a0023;
 		public static final int common_google_signin_btn_text_light_default = 0x7f0a0004;
 		public static final int common_google_signin_btn_text_light_disabled = 0x7f0a0005;
 		public static final int common_google_signin_btn_text_light_focused = 0x7f0a0006;
@@ -79,19 +79,19 @@ public final class R {
 		public static final int common_ic_googleplayservices = 0x7f020078;
 	}
 	public static final class id {
-		public static final int adjust_height = 0x7f0b000c;
-		public static final int adjust_width = 0x7f0b000d;
-		public static final int auto = 0x7f0b0016;
-		public static final int dark = 0x7f0b0017;
-		public static final int hybrid = 0x7f0b000f;
-		public static final int icon_only = 0x7f0b0013;
-		public static final int light = 0x7f0b0018;
-		public static final int none = 0x7f0b000e;
-		public static final int normal = 0x7f0b0010;
-		public static final int satellite = 0x7f0b0011;
-		public static final int standard = 0x7f0b0014;
-		public static final int terrain = 0x7f0b0012;
-		public static final int wide = 0x7f0b0015;
+		public static final int adjust_height = 0x7f0b0011;
+		public static final int adjust_width = 0x7f0b0012;
+		public static final int auto = 0x7f0b001b;
+		public static final int dark = 0x7f0b001c;
+		public static final int hybrid = 0x7f0b0014;
+		public static final int icon_only = 0x7f0b0018;
+		public static final int light = 0x7f0b001d;
+		public static final int none = 0x7f0b0013;
+		public static final int normal = 0x7f0b0015;
+		public static final int satellite = 0x7f0b0016;
+		public static final int standard = 0x7f0b0019;
+		public static final int terrain = 0x7f0b0017;
+		public static final int wide = 0x7f0b001a;
 	}
 	public static final class integer {
 		public static final int google_play_services_version = 0x7f0c0000;

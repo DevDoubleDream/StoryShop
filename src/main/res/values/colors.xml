@@ -12,4 +12,9 @@
     <color name="shopTxtTitleColor">#FEFEFE</color>
     <color name="layerSeperateLine">#E5E5E5</color>
     <color name="productInfoDetailColor">#9B9B9B</color>
+    <color name="detailTextGray">#999999</color>
+    <color name="detailNoticeTextColor">#666666</color>
+    <color name="detailNoticeBackgroundColor">#F9F9FA</color>
+    <color name="detailNoticeLineColor">#E8E8E8</color>
+    <color name="loginEditTextLineColor">#CCCCCC</color>
 </resources>

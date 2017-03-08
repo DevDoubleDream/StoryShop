@@ -1,12 +1,14 @@
 package kr.wdream.Wdream;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Px;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Gravity;
@@ -15,9 +17,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.FrameLayout;
+import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -26,12 +27,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import kr.wdream.Wdream.Adapter.ProductsAdapter;
 import kr.wdream.Wdream.Models.ConstantModel;
+import kr.wdream.Wdream.Models.LoginUser;
 import kr.wdream.Wdream.Models.Product;
-import kr.wdream.Wdream.Util.AddProductTask;
-import kr.wdream.Wdream.Util.GetProductTask;
+import kr.wdream.Wdream.Task.AddProductTask;
+import kr.wdream.Wdream.Task.GetProductTask;
+import kr.wdream.Wdream.Task.ShoppingLoginTask;
 import kr.wdream.Wdream.common.PxToDp;
 import kr.wdream.storyshop.R;
 import kr.wdream.ui.Components.LayoutHelper;
@@ -41,7 +45,6 @@ import kr.wdream.ui.Components.LayoutHelper;
  */
 
 public class ShoppingMainActivity extends Activity implements View.OnClickListener,
-        AdapterView.OnItemClickListener,
         AbsListView.OnScrollListener{
 
     //UI
@@ -60,10 +63,16 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
     private GridView        gridProduct;
     private ProductsAdapter adapter;
 
+    private ListView navList;
+
     //Properties
     private ArrayList<Product> arrayProduct = new ArrayList<Product>();
-
+    private String[] drawerTestArray = {"장바구니", "얍얍", "챱챱"};
     private boolean gridLock;
+
+    private HashMap<String,String> loginUserInfo = new HashMap<String,String>();
+    private String userId;
+    private String userCode;
 
 
     // 각 스레드들의 동작 완료 후 Main 스레드 동작
@@ -109,9 +118,18 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        getLoginUser();
+
         initView();
 
         new GetProductTask(ConstantModel.page, ConstantModel.pageSize, handler).execute();
+    }
+
+    public void getLoginUser(){
+        loginUserInfo = LoginUser.getAutoLoginUser(ShoppingMainActivity.this);
+
+        userId = loginUserInfo.get("userId");
+        userCode = loginUserInfo.get("userCode");
     }
 
     private void initView(){
@@ -120,8 +138,11 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
         setContentView(drawerLayout);
 
         //DrawerLayout 추가
-        final ListView navList = new ListView(this);
-        DrawerLayout.LayoutParams paramDrawer = new DrawerLayout.LayoutParams(300, ViewGroup.LayoutParams.MATCH_PARENT, Gravity.START);
+        navList = new ListView(this);
+        navList.setBackgroundColor(Color.BLACK);
+        ArrayAdapter<String> drawerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerTestArray);
+        navList.setAdapter(drawerAdapter);
+        DrawerLayout.LayoutParams paramDrawer = new DrawerLayout.LayoutParams(PxToDp.dpToPx(300), ViewGroup.LayoutParams.MATCH_PARENT, Gravity.START);
 
         main = new LinearLayout(this);
         main.setOrientation(LinearLayout.VERTICAL);
@@ -194,49 +215,100 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
         gridProduct.setPadding(PxToDp.dpToPx(8),PxToDp.dpToPx(16), PxToDp.dpToPx(8), 0);
         gridProduct.setBackgroundResource(R.color.lightgray);
 
-        gridProduct.setOnItemClickListener(this);
+        navList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        //임시 로그인 페이지
+                        loginUserInfo = LoginUser.getAutoLoginUser(ShoppingMainActivity.this);
+
+                        userId = loginUserInfo.get("userId");
+                        userCode = loginUserInfo.get("userCode");
+                        Log.d("상은", "userId : " + userId);
+                        if(!"".equals(userId)) {
+                            AlertDialog.Builder dialog = new AlertDialog.Builder(ShoppingMainActivity.this);
+                            dialog.setTitle("로그아웃");
+                            dialog.setMessage("로그아웃 하시겠습니까?");
+                            dialog.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                            dialog.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    LoginUser.userLogout(ShoppingMainActivity.this);
+                                    dialog.dismiss();
+                                }
+                            });
+
+                            dialog.show();
+                        } else {
+                            Intent intent = new Intent(ShoppingMainActivity.this, ShoppingLoginTask.class);
+                            startActivity(intent);
+                        }
+                        break;
+                }
+            }
+        });
+
+        gridProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Product clickProduct = (Product) parent.getAdapter().getItem(position);
+
+                Log.d("상은", "clickProduct : " + clickProduct.getStrProductTitle());
+
+                Intent intent = new Intent(ShoppingMainActivity.this, ProductInfoActivity.class);
+
+                intent.putExtra("title", clickProduct.getStrProductTitle());
+                intent.putExtra("price", clickProduct.getStrItemMoney());
+                intent.putExtra("productID", clickProduct.getStrProductID());
+                intent.putExtra("imagePath", clickProduct.getStrProductImgPath());
+                intent.putExtra("productDetail", clickProduct.getStrProductDetail());
+
+                startActivity(intent);
+            }
+        });
         gridProduct.setOnScrollListener(this);
         btnBasket.setOnClickListener(this);
         btnMenu.setOnClickListener(this);
         btnFinish.setOnClickListener(this);
 
 
-        main.addView(navigationBar, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 50));
-        main.addView(imgBanner, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 155));
-        main.addView(gridProduct, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+        LinearLayout.LayoutParams paramNavi = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, PxToDp.dpToPx(50));
+        LinearLayout.LayoutParams paramBanner = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, PxToDp.dpToPx(155));
+        LinearLayout.LayoutParams paramProduct = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+//        main.addView(navigationBar, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 50));
+        main.addView(navigationBar, paramNavi);
+//        main.addView(imgBanner, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 155));
+        main.addView(imgBanner, paramBanner);
+//        main.addView(gridProduct, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+        main.addView(gridProduct, paramProduct);
     }
 
     @Override
     public void onClick(View v){
         if (v == btnBasket) {
 
+                Intent intent = new Intent(ShoppingMainActivity.this, BasketActivity.class);
+                intent.putExtra("userId", userId);
+                intent.putExtra("userCode", userCode);
+                startActivity(intent);
+
+
         }
 
         if (v == btnMenu) {
-
+            drawerLayout.openDrawer(navList, true);
         }
 
         if (v == btnFinish) {
             finish();
         }
-    }
-
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Product clickProduct = (Product) parent.getAdapter().getItem(position);
-
-        Log.d("상은", "clickProduct : " + clickProduct.getStrProductTitle());
-
-        Intent intent = new Intent(ShoppingMainActivity.this, ProductInfoActivity.class);
-
-        intent.putExtra("title", clickProduct.getStrProductTitle());
-        intent.putExtra("price", clickProduct.getStrItemMoney());
-        intent.putExtra("productID", clickProduct.getStrProductID());
-        intent.putExtra("imagePath", clickProduct.getStrProductImgPath());
-        intent.putExtra("productDetail", clickProduct.getStrProductDetail());
-
-        startActivity(intent);
     }
 
 
@@ -268,5 +340,13 @@ public class ShoppingMainActivity extends Activity implements View.OnClickListen
         super.onDestroy();
 
         ConstantModel.page = 1;
+    }
+
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawers();
+        } else {
+            finish();
+        }
     }
 }

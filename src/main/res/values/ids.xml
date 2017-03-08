@@ -19,4 +19,9 @@
     <item name="btnMenu" type="id"/>
 
     <item name="testLayout" type="id"/>
+    <item name="rootView" type="id"/>
+    <item name="btnIncreasing" type="id"/>
+    <item name="btnFloatingBuy" type="id"/>
+    <item name="txtOptionBase" type="id"/>
+    <item name="lytBaseOption" type="id"/>
 </resources>

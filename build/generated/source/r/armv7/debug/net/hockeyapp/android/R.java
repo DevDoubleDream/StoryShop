@@ -8,49 +8,49 @@ package net.hockeyapp.android;
 
 public final class R {
 	public static final class color {
-		public static final int hockeyapp_background_header = 0x7f0a000a;
-		public static final int hockeyapp_background_light = 0x7f0a000b;
-		public static final int hockeyapp_background_white = 0x7f0a000c;
-		public static final int hockeyapp_button_background = 0x7f0a000d;
-		public static final int hockeyapp_button_background_pressed = 0x7f0a000e;
-		public static final int hockeyapp_button_background_selected = 0x7f0a000f;
-		public static final int hockeyapp_text_black = 0x7f0a0010;
-		public static final int hockeyapp_text_light = 0x7f0a0011;
-		public static final int hockeyapp_text_normal = 0x7f0a0012;
-		public static final int hockeyapp_text_white = 0x7f0a0013;
+		public static final int hockeyapp_background_header = 0x7f0a000e;
+		public static final int hockeyapp_background_light = 0x7f0a000f;
+		public static final int hockeyapp_background_white = 0x7f0a0010;
+		public static final int hockeyapp_button_background = 0x7f0a0011;
+		public static final int hockeyapp_button_background_pressed = 0x7f0a0012;
+		public static final int hockeyapp_button_background_selected = 0x7f0a0013;
+		public static final int hockeyapp_text_black = 0x7f0a0014;
+		public static final int hockeyapp_text_light = 0x7f0a0015;
+		public static final int hockeyapp_text_normal = 0x7f0a0016;
+		public static final int hockeyapp_text_white = 0x7f0a0017;
 	}
 	public static final class drawable {
 		public static final int hockeyapp_btn_background = 0x7f0200c6;
 	}
 	public static final class id {
-		public static final int button_add_response = 0x7f0b0041;
-		public static final int button_attachment = 0x7f0b003c;
-		public static final int button_login = 0x7f0b0046;
-		public static final int button_refresh = 0x7f0b0042;
-		public static final int button_send = 0x7f0b003d;
-		public static final int button_update = 0x7f0b004a;
-		public static final int input_email = 0x7f0b0038;
-		public static final int input_message = 0x7f0b003a;
-		public static final int input_name = 0x7f0b0037;
-		public static final int input_password = 0x7f0b0045;
-		public static final int input_subject = 0x7f0b0039;
-		public static final int label_author = 0x7f0b004c;
-		public static final int label_date = 0x7f0b004d;
-		public static final int label_last_updated = 0x7f0b003f;
-		public static final int label_message = 0x7f0b0034;
-		public static final int label_text = 0x7f0b004e;
-		public static final int label_title = 0x7f0b0048;
-		public static final int label_version = 0x7f0b0049;
-		public static final int list_attachments = 0x7f0b004f;
-		public static final int list_feedback_messages = 0x7f0b0043;
-		public static final int text_headline = 0x7f0b0044;
-		public static final int view_header = 0x7f0b0047;
-		public static final int web_update_details = 0x7f0b004b;
-		public static final int wrapper_attachments = 0x7f0b003b;
-		public static final int wrapper_feedback = 0x7f0b0036;
-		public static final int wrapper_feedback_scroll = 0x7f0b0035;
-		public static final int wrapper_messages = 0x7f0b003e;
-		public static final int wrapper_messages_buttons = 0x7f0b0040;
+		public static final int button_add_response = 0x7f0b004c;
+		public static final int button_attachment = 0x7f0b0047;
+		public static final int button_login = 0x7f0b0051;
+		public static final int button_refresh = 0x7f0b004d;
+		public static final int button_send = 0x7f0b0048;
+		public static final int button_update = 0x7f0b0055;
+		public static final int input_email = 0x7f0b0043;
+		public static final int input_message = 0x7f0b0045;
+		public static final int input_name = 0x7f0b0042;
+		public static final int input_password = 0x7f0b0050;
+		public static final int input_subject = 0x7f0b0044;
+		public static final int label_author = 0x7f0b0057;
+		public static final int label_date = 0x7f0b0058;
+		public static final int label_last_updated = 0x7f0b004a;
+		public static final int label_message = 0x7f0b003f;
+		public static final int label_text = 0x7f0b0059;
+		public static final int label_title = 0x7f0b0053;
+		public static final int label_version = 0x7f0b0054;
+		public static final int list_attachments = 0x7f0b005a;
+		public static final int list_feedback_messages = 0x7f0b004e;
+		public static final int text_headline = 0x7f0b004f;
+		public static final int view_header = 0x7f0b0052;
+		public static final int web_update_details = 0x7f0b0056;
+		public static final int wrapper_attachments = 0x7f0b0046;
+		public static final int wrapper_feedback = 0x7f0b0041;
+		public static final int wrapper_feedback_scroll = 0x7f0b0040;
+		public static final int wrapper_messages = 0x7f0b0049;
+		public static final int wrapper_messages_buttons = 0x7f0b004b;
 	}
 	public static final class layout {
 		public static final int hockeyapp_activity_expiry_info = 0x7f030006;

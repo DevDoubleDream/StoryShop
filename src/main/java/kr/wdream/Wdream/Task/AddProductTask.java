@@ -1,4 +1,4 @@
-package kr.wdream.Wdream.Util;
+package kr.wdream.Wdream.Task;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 import kr.wdream.Wdream.Models.ConstantModel;
 import kr.wdream.Wdream.Models.Product;
+import kr.wdream.Wdream.Util.ShoppingUtil;
 
 /**
  * Created by deobeuldeulim on 2017. 2. 24..

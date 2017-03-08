@@ -119,7 +119,9 @@
 
         <activity android:name="kr.wdream.Wdream.ShoppingMainActivity"/>
         <activity android:name="kr.wdream.Wdream.ProductInfoActivity"/>
-
+        <activity android:name="kr.wdream.Wdream.BasketActivity"/>
+        <activity android:name="kr.wdream.Wdream.BuyDetailActivity"/>
+        <activity android:name="kr.wdream.Wdream.ShoppingLoginActivity"/>
 
         <activity
             android:name="kr.wdream.ui.ShareActivity"
